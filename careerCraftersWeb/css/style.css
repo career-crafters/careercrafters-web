@@ -45,6 +45,7 @@ body {
 
 .layout_padding-top {
   padding-top: 90px;
+  color: #f1ecec;
 }
 
 .layout_padding-bottom {
@@ -67,8 +68,8 @@ body {
 
 .heading_container h2 {
   position: relative;
-  font-weight: bold;
-  text-transform: uppercase;
+  font-weight: lighter;
+  text-transform: none;
 }
 
 /*header section*/
@@ -82,7 +83,7 @@ body {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background-image: url(../images/hero-bg.png);
+  /* background-image: url(../images/hero-bg.png); */
   background-size: cover;
   background-position: bottom;
 }
@@ -90,12 +91,12 @@ body {
 .sub_page .hero_area {
   height: auto;
   background: none;
-  background-color: #D4AF37;
+  background-color: #000000;
 }
 
 .sub_page .footer_bg {
   background: none;
-  background-color: #D4AF37;
+  background-color: #000000;
 }
 
 .sub_page .footer_bg .info_section {
@@ -174,6 +175,61 @@ a:focus {
   outline: none;
 }
 
+/* Base styles for the logo */
+.header_section .navbar-brand img {
+  max-width: 100%; /* Ensures the logo is never wider than its container */
+  height: auto; /* Maintains the aspect ratio of the logo */
+}
+
+/* Styles specifically for mobile screens using a media query */
+@media (max-width: 768px) { /* Adjust this value based on your site's responsive breakpoints */
+  .header_section {
+    position: relative; /* Establishes a positioning context for absolutely positioned children */
+  }
+
+  .header_section .navbar-brand {
+    display: inline-block;
+    max-width: 70%; /* Adjust the percentage as needed to prevent overlap */
+    margin-left: 15px; /* Add some left margin if needed */
+  }
+
+  .header_section .navbar-toggler {
+    position: absolute;
+    top: 0;
+    right: 0; /* Keeps the hamburger icon in the top right corner */
+    margin-right: 15px; /* Add some right margin if needed */
+  }
+}
+
+
+/* Base styles for the hamburger icon */
+.header_section .navbar-toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin-top: 10px; /* Adjust as needed */
+  margin-right: 10px; /* Adjust as needed */
+}
+
+/* Adjusting the size of the hamburger icon for smaller screens */
+@media (max-width: 768px) { /* Adjust this value based on your responsive design breakpoints */
+  .header_section .navbar-toggler {
+    margin-top: 5px; /* Smaller top margin */
+    margin-right: 5px; /* Smaller right margin */
+    /* If the icon is an image or SVG */
+    width: 30px; /* Smaller width */
+    height: 30px; /* Smaller height */
+  }
+}
+
+/* You can add additional breakpoints for even smaller screens */
+@media (max-width: 480px) {
+  .header_section .navbar-toggler {
+    /* Even smaller margins and size if needed */
+  }
+}
+
+
 .custom_nav-container .navbar-toggler {
   padding: 0;
   width: 37px;
@@ -229,7 +285,7 @@ a:focus {
           align-items: center;
   position: relative;
   z-index: 2;
-  color: #3b3a3a;
+  color: #0cd60c;
   padding-bottom: 90px;
 }
 
@@ -570,28 +626,29 @@ a:focus {
   width: 100%;
   margin: 15px 0;
   padding: 10px 20px;
-  border: 1px solid rgba(0, 0, 0, 0.4);
+  border: 1px solid rgb(255, 255, 255);
   border-radius: 30px;
 }
 
 .contact_section .contact-form input.input_message {
   height: 175px;
+  color: #f1ecec;
 }
 
 .contact_section .contact-form input::-webkit-input-placeholder {
-  color: #3d3c3c;
+  color: #f1ecec;
 }
 
 .contact_section .contact-form input:-ms-input-placeholder {
-  color: #3d3c3c;
+  color: #f1ecec;
 }
 
 .contact_section .contact-form input::-ms-input-placeholder {
-  color: #3d3c3c;
+  color: #f1ecec;
 }
 
 .contact_section .contact-form input::placeholder {
-  color: #3d3c3c;
+  color: #f1ecec;
 }
 
 .contact_section .contact-form button {
@@ -600,7 +657,7 @@ a:focus {
   display: inline-block;
   padding: 10px 45px;
   background-color: #D4AF37;
-  color: #ffffff;
+  color: #000000;
   border-radius: 5px;
   text-transform: uppercase;
   margin-top: 25px;
@@ -612,7 +669,7 @@ a:focus {
 
 /* end contact section */
 .footer_bg {
-  background-image: url(../images/footer-bg.png);
+  /* background-image: url(../images/footer-bg.png); */
   background-size: cover;
   background-position: top;
 }
@@ -707,13 +764,39 @@ a:focus {
   background-color: #ffc400;
 }
 
+/* Base styles for social_box -- this ensures it stays horizontal */
 .info_section .info_form .social_box {
-  margin-top: 35px;
-  width: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
+  display: inline-block;
+  justify-content: center; /* Centers the icons horizontally */
+  /* flex-wrap: wrap; Allows icons to wrap onto the next line */
+  gap: 2px; /* Sets a gap between items */
 }
+
+/* Styles for individual icons */
+.info_section .info_form .social_box a {
+  display: inline-block;
+  width: 30px; /* Adjust width as needed */
+  height: 30px; /* Adjust height as needed */
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 768px) { /* Adjust the pixel value based on your design */
+  .info_section .info_form .social_box {
+    justify-content: start; /* Aligns icons to the start of the container */
+  }
+
+  .info_section .info_form .social_box a {
+    margin-right: 8px; /* Adjust the right margin to set space between icons */
+  }
+}
+
+  .info_section .info_form .social_box a {
+    margin-right: 0; /* No right margin since icons are stacked */
+    margin-bottom: 8px; /* Space between stacked icons */
+  }
 
 .info_section .info_form .social_box a {
   margin-right: 25px;
