@@ -1,5 +1,5 @@
 body {
-  font-family: 'GoiaVariable';
+  font-family: 'Goia Variable';
   font-weight: lighter;
   font-style: normal;
   color: #0c0c0c;
@@ -103,12 +103,12 @@ body {
   color: #ffffff;
   text-align: center;
   border-radius: 6px;
-  text-transform: uppercase;
+  text-transform: none;
   font-size: 15px;
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link, .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
-  background-color: #582fd7;
+  background-color: #f4b01a;
 }
 
 a,
@@ -144,7 +144,7 @@ a:focus {
   font-size: 24px;
   font-weight: 700;
   color: #ffffff;
-  text-transform: uppercase;
+  text-transform: none;
 }
 
 .custom_nav-container {
@@ -614,6 +614,12 @@ a:focus {
   margin-bottom: 25px;
   font-size: 24px;
 }
+
+.navbar-brand img {
+  max-height: 60px; /* Adjust as needed for your design */
+  width: auto;
+}
+
 
 .info_section .info_insta .insta_container > div {
   display: -webkit-box;
