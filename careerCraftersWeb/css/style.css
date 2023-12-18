@@ -1,5 +1,7 @@
 body {
-  font-family: "Poppins", sans-serif;
+  font-family: 'GoiaVariable';
+  font-weight: lighter;
+  font-style: normal;
   color: #0c0c0c;
   background-color: #ffffff;
 }
@@ -8,6 +10,12 @@ body {
   padding-top: 90px;
   padding-bottom: 90px;
 }
+
+/* .fonts {
+  font-family: 'Goia Variable';
+  font-weight: normal;
+  font-style: normal;
+} */
 
 .layout_padding2 {
   padding-top: 45px;

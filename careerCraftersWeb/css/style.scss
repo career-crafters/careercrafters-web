@@ -3,8 +3,18 @@ $black: #000000;
 $primary1: #582fd7;
 $primary2: #371e71;
 
+@font-face {
+  font-family: 'GoiaVariable';
+  src: url('GoiaVariable.woff2') format('woff2'),
+      url('GoiaVariable.woff') format('woff');
+  font-weight: lighter;
+  font-style: lighter;
+  font-display: swap;
+}
+
+
 @mixin main-font {
-  font-family: "Poppins", sans-serif;
+  font-family: "GoiaVariable", sans-serif;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
