@@ -2,13 +2,26 @@ body {
   font-family: 'Goia Display Variable';
   font-weight: lighter;
   font-style: normal;
-  color: #0c0c0c;
-  background-color: #ffffff;
+  color: #ffffff;
+  background-color: black;
 }
 
 .layout_padding {
   padding-top: 90px;
   padding-bottom: 90px;
+}
+
+.layout_padding,
+.layout_padding2,
+.about_section,
+.contact_section,
+.footer_bg,
+.info_section
+.about_section.layout_padding
+.container-fluid {
+  background-color: #000000; /* Apply black background to these classes too */
+  color: #ffffff; /* Change text color to white for visibility */
+  /* Other styles remain unchanged */
 }
 
 /* .fonts {
@@ -77,12 +90,12 @@ body {
 .sub_page .hero_area {
   height: auto;
   background: none;
-  background-color: #371e71;
+  background-color: #D4AF37;
 }
 
 .sub_page .footer_bg {
   background: none;
-  background-color: #371e71;
+  background-color: #D4AF37;
 }
 
 .sub_page .footer_bg .info_section {
@@ -246,14 +259,14 @@ a:focus {
 .slider_section .detail_box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #582fd7;
+  background-color: #D4AF37;
   color: #ffffff;
   border-radius: 5px;
   margin-top: 35px;
 }
 
 .slider_section .detail_box a:hover {
-  background-color: #6944db;
+  background-color: #ffc400;
 }
 
 .slider_section .img-box img {
@@ -305,7 +318,7 @@ a:focus {
 
 .slider_section .carousel_btn-container .carousel-control-next {
   background-image: url(../images/next.png);
-  background-color: #582fd7;
+  background-color: #D4AF37;
 }
 
 .service_section {
@@ -389,17 +402,17 @@ a:focus {
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #582fd7;
+  background-color: #D4AF37;
   color: #ffffff;
   border-radius: 5px;
 }
 
 .service_section .btn-box a:hover {
-  background-color: #6944db;
+  background-color: #ffc401;
 }
 
 .about_section {
-  background-color: #f8f7fb;
+  background-color: #000000;
 }
 
 .about_section .row {
@@ -428,14 +441,14 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #582fd7;
+  background-color:#D4AF37;
   color: #ffffff;
   border-radius: 5px;
   margin: 25px 0 45px 0;
 }
 
 .about_section .detail-box a:hover {
-  background-color: #6944db;
+  background-color: #ffc400;
 }
 
 .portfolio_section .heading_container {
@@ -529,13 +542,13 @@ a:focus {
 .portfolio_section .btn-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #582fd7;
+  background-color: #D4AF37;
   color: #ffffff;
   border-radius: 5px;
 }
 
 .portfolio_section .btn-box a:hover {
-  background-color: #6944db;
+  background-color: #ffc400;
 }
 
 /* contact section */
@@ -586,7 +599,7 @@ a:focus {
   outline: none;
   display: inline-block;
   padding: 10px 45px;
-  background-color: #582fd7;
+  background-color: #D4AF37;
   color: #ffffff;
   border-radius: 5px;
   text-transform: uppercase;
@@ -594,7 +607,7 @@ a:focus {
 }
 
 .contact_section .contact-form button:hover {
-  background-color: #6944db;
+  background-color: #ffc400;
 }
 
 /* end contact section */
@@ -682,7 +695,7 @@ a:focus {
   border: none;
   display: inline-block;
   padding: 8px 30px;
-  background-color: #582fd7;
+  background-color: #D4AF37;
   color: #ffffff;
   border-radius: 0;
   margin-top: 15px;
@@ -691,7 +704,7 @@ a:focus {
 }
 
 .info_section .info_form form button:hover {
-  background-color: #6944db;
+  background-color: #ffc400;
 }
 
 .info_section .info_form .social_box {
