@@ -4,17 +4,17 @@ $primary1: #30D5C8;
 $primary2: #D4AF37;
 
 @font-face {
-  font-family: 'Goia Variable';
-  src: url('GoiaVariable.woff2') format('woff2'),
-      url('GoiaVariable.woff') format('woff');
-  font-weight: lighter;
-  font-style: lighter;
+  font-family: 'Goia Display Variable';
+  src: url('GoiaDisplayVariable.woff2') format('woff2'),
+      url('GoiaDisplayVariable.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
   font-display: swap;
 }
 
 
 @mixin main-font {
-  font-family: "Goia Variable", sans-serif;
+  font-family: "Goia Display Variable", sans-serif;
 }
 
 @mixin hero_btn($col1, $col2, $pad1, $pad2, $bRadius) {
