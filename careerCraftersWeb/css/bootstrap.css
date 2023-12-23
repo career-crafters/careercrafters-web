@@ -4170,10 +4170,13 @@ input[type="button"].btn-block {
 }
 
 .navbar-brand {
-  display: inline-block;
+  display: flex;
+  flex-wrap: nowrap;
+  min-width: 30px;
   padding-top: 0.3125rem;
   padding-bottom: 0.3125rem;
-  margin-right: 1rem;
+  margin-right: 0.5rem; /* Reduced margin to the right */
+  margin-left: -3rem; /* Negative margin to move it further to the left */
   font-size: 1.25rem;
   line-height: inherit;
   white-space: nowrap;
@@ -4189,6 +4192,7 @@ input[type="button"].btn-block {
   -ms-flex-direction: column;
   flex-direction: column;
   padding-left: 0;
+  margin-right: -5rem;
   margin-bottom: 0;
   list-style: none;
 }
