@@ -3,7 +3,7 @@ body {
   font-weight: lighter;
   font-style: normal;
   color: #ffffff;
-  background-color: black;
+  background-image: linear-gradient(to right bottom, #2f76b9, #8672c2, #c76ab1, #f1698d, #ff7c61, #ff834d, #fb8c36, #f29717, #ef841a, #ea711f, #e45d25, #dd492a);
 }
 
 .layout_padding {
@@ -63,12 +63,10 @@ body {
 .sub_page .hero_area {
   height: auto;
   background: none;
-  background-color: #000000;
 }
 
 .sub_page .footer_bg {
   background: none;
-  background-color: #000000;
 }
 
 .sub_page .footer_bg .info_section {
@@ -94,7 +92,7 @@ body {
 }
 
 .custom_nav-container .navbar-nav .nav-item.active .nav-link, .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
-  background-color: #f4b01a;
+  background-color: #316FF6;
 }
 
 a,
@@ -305,14 +303,14 @@ a:focus {
 .slider_section .detail_box a {
   display: inline-block;
   padding: 10px 45px;
-  background-color: #D4AF37;
+  background-color: #578afa;
   color: #ffffff;
   border-radius: 5px;
   margin-top: 35px;
 }
 
 .slider_section .detail_box a:hover {
-  background-color: #ffc400;
+  background-color: #316FF6;
 }
 
 .slider_section .img-box img {
@@ -364,7 +362,7 @@ a:focus {
 
 .slider_section .carousel_btn-container .carousel-control-next {
   background-image: url(../images/next.png);
-  background-color: #D4AF37;
+  background-color: #316FF6;
 }
 
 .service_section {
@@ -395,6 +393,7 @@ a:focus {
       flex-basis: 31%;
   border: 1px solid #d7d6d6;
   padding: 45px 25px 25px;
+  border-radius: 25px;
 }
 
 .service_section .service_container .box .img-box {
@@ -407,8 +406,7 @@ a:focus {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  background-color: #ffffff;
-  border-radius: 15px;
+ 
 }
 
 .service_section .service_container .box .img-box img {
@@ -448,17 +446,13 @@ a:focus {
 .service_section .btn-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #D4AF37;
+  background-color: #578afa;
   color: #ffffff;
   border-radius: 5px;
 }
 
 .service_section .btn-box a:hover {
-  background-color: #ffc401;
-}
-
-.about_section {
-  background-color: #000000;
+  background-color: #316FF6;
 }
 
 .about_section .row {
@@ -487,14 +481,14 @@ a:focus {
 .about_section .detail-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color:#D4AF37;
+  background-color:#578afa;
   color: #ffffff;
   border-radius: 5px;
   margin: 25px 0 45px 0;
 }
 
 .about_section .detail-box a:hover {
-  background-color: #ffc400;
+  background-color: #316FF6;
 }
 
 .portfolio_section .heading_container {
@@ -588,13 +582,13 @@ a:focus {
 .portfolio_section .btn-box a {
   display: inline-block;
   padding: 10px 35px;
-  background-color: #D4AF37;
+  background-color: #578afa;
   color: #ffffff;
   border-radius: 5px;
 }
 
 .portfolio_section .btn-box a:hover {
-  background-color: #ffc400;
+  background-color: #316FF6;
 }
 
 /* contact section */
@@ -646,15 +640,14 @@ a:focus {
   outline: none;
   display: inline-block;
   padding: 10px 45px;
-  background-color: #D4AF37;
-  color: #000000;
+  background-color: #578afa;
+  color: #ffffff;
   border-radius: 5px;
-  text-transform: uppercase;
   margin-top: 25px;
 }
 
 .contact_section .contact-form button:hover {
-  background-color: #ffc400;
+  background-color: #316FF6;
 }
 
 /* end contact section */
@@ -741,16 +734,16 @@ a:focus {
   border: none;
   display: inline-block;
   padding: 8px 30px;
-  background-color: #D4AF37;
+  background-color:  #316FF6;
   color: #ffffff;
-  border-radius: 0;
+  border-radius: 5px;
   margin-top: 15px;
   text-transform: uppercase;
   font-size: 15px;
 }
 
 .info_section .info_form form button:hover {
-  background-color: #ffc400;
+  background-color: #578afa;
 }
 
 /* Base styles for social_box -- this ensures it stays horizontal */
@@ -766,14 +759,14 @@ a:focus {
   height: 20px; /* Adjust height as needed */
   background-size: cover;
   background-repeat: no-repeat;
-  background-position: center;
+  margin-right: 30px;
+  
 }
 
 /* Media query for smaller screens */
 @media (max-width: 768px) { /* Adjust the pixel value based on your design */
   .info_section .info_form {
     display: flex;
-    justify-content: start; /* Aligns icons to the start of the container */
   }
 
   .info_section .info_form a {
