@@ -11,7 +11,7 @@
 
   $ = $ && $.hasOwnProperty('default') ? $['default'] : $;
   Popper = Popper && Popper.hasOwnProperty('default') ? Popper['default'] : Popper;
-
+  
   function _defineProperties(target, props) {
     for (var i = 0; i < props.length; i++) {
       var descriptor = props[i];
@@ -4433,7 +4433,12 @@
   exports.Toast = Toast;
   exports.Tooltip = Tooltip;
 
-  Object.defineProperty(exports, '__esModule', { value: true });
 
+  Object.defineProperty(exports, '__esModule', { value: true });
+  
+  window.onbeforeunload = function () {
+    window.scrollTo(0, 0);
+  };
+  
 }));
 //# sourceMappingURL=bootstrap.js.map
