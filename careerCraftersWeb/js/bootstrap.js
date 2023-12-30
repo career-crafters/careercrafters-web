@@ -4436,9 +4436,5 @@
 
   Object.defineProperty(exports, '__esModule', { value: true });
   
-  window.onbeforeunload = function () {
-    window.scrollTo(0, 0);
-  };
-  
 }));
 //# sourceMappingURL=bootstrap.js.map
