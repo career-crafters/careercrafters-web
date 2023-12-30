@@ -90,7 +90,9 @@ body {
   text-transform: none;
   font-size: 15px;
 }
-
+ .nav-link {
+  cursor: pointer;
+ }
 .custom_nav-container .navbar-nav .nav-item.active .nav-link, .custom_nav-container .navbar-nav .nav-item:hover .nav-link {
   background-color: #316FF6;
 }
@@ -129,6 +131,7 @@ a:focus {
   font-weight: 700;
   color: #ffffff;
   text-transform: none;
+  padding: 12px 0px;
 }
 
 .custom_nav-container {
